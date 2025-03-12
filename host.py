@@ -8,9 +8,9 @@ from pyrogram import Client, filters
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Replace with your API credentials
-API_ID = "your_api_id"
-API_HASH = "your_api_hash"
-ADMIN_ID = your_admin_id  # Replace with your Telegram ID
+API_ID = os.getenv("API_ID", 7249983)
+API_HASH = os.getenv("API_HASH", "be8ea36c220d5e879c91ad9731686642")
+ADMIN_ID = os.getenv("ADMIN_ID", 7143123520)# Replace with your Telegram ID
 
 # Directory where bots will be cloned and stored
 BOTS_DIR = "deployed_bots"
