@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 API_ID = int(os.getenv("API_ID", 7249983))
 API_HASH = os.getenv("API_HASH", "be8ea36c220d5e879c91ad9731686642")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "7862361752:AAEadkgzFaa0a5HSbdJiccy1dt1--FH740o")
-ADMIN_ID = your_admin_id  # Your Telegram user ID
+ADMIN_ID = os.getenv("ADMIN_ID", 7143123520) # Your Telegram user ID
 
 # Directory to store cloned bots
 BOTS_DIR = "deployed_bots"
